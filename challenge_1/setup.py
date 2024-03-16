@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import find_packages, setup
 
-package_name = 'basic_comms'
+package_name = 'challenge_1'
 
 setup(
     name=package_name,
@@ -23,8 +23,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = basic_comms.talker:main',
-            'listener = basic_comms.listener:main',
             'tsin = basic_comms.tsin:main',
             'lsin = basic_comms.lsin:main',
         ],
